@@ -1,0 +1,7 @@
+#include <ad/chain/genesis_state.hpp>
+
+namespace ad { namespace chain {
+
+const string genesis_state::ad_root_key = "${AD_ROOT_KEY}";
+
+} } // namespace ad::chain

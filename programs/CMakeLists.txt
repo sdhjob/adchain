@@ -1,0 +1,5 @@
+add_subdirectory( nodead )
+add_subdirectory( clad )
+add_subdirectory( kadd )
+add_subdirectory( ad-launcher )
+add_subdirectory( ad-blocklog )
