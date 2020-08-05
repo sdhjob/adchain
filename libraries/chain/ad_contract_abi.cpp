@@ -22,7 +22,7 @@ abi_def ad_contract_abi(const abi_def& ad_system_abi)
    abi_def ad_abi(ad_system_abi);
 
    if( ad_abi.version.size() == 0 ) {
-      ad_abi.version = "ad::abi/1.0";
+      ad_abi.version = "eosio::abi/1.0";
    }
 
    fc::move_append(ad_abi.types, common_type_defs());

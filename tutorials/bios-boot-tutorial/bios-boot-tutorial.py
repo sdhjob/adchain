@@ -127,7 +127,9 @@ def startNode(nodeIndex, account):
             otherOpts)
     with open(dir + 'stderr', mode='w') as f:
         f.write(cmd + '\n\n')
-    background(cmd + '    2>>' + dir + 'stderr')
+    finalCmd = cmd + '    2>>' + dir + 'stderr'
+    background(finalCmd)
+    run('echo "nohup '+finalCmd+'" > '+dir+'/start.sh' )
 
 def startProducers(b, e):
     for i in range(b, e):
