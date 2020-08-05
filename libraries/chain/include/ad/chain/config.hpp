@@ -35,7 +35,7 @@ const static name owner_name      { N(owner) };
 const static name ad_any_name  { N(ad.any) };
 const static name ad_code_name { N(ad.code) };
 
-const static int      block_interval_ms = 500;
+const static int      block_interval_ms = 3000;
 const static int      block_interval_us = block_interval_ms*1000;
 const static uint64_t block_timestamp_epoch = 946684800000ll; // epoch is year 2000.
 const static uint32_t genesis_num_supported_key_types = 2;
